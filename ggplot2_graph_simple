@@ -1,0 +1,8 @@
+data("iris") # Carregar dados
+library(tibble) # Carregar pacote tibble para visualizar tabela de dados simplificada
+table(iris) # Dados iris
+tibble(iris) # Dados iris
+
+library(ggplot2) # Pacote ggplot2 
+ggplot(iris, aes(x = Sepal.Length, y = Petal.Width)) +
+       geom_point()
